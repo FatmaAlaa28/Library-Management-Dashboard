@@ -1,0 +1,51 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+   
+}
+
+.sidebar {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+li{
+    margin: 10px 0px;
+}
+.nav {
+    flex-grow: 1; /* Make the nav take up the remaining space */
+}
+
+.nav-link {
+    padding: 10px 15px; /* Optional: Adjust padding for better spacing */
+    color: black;
+}
+
+.sidebar .nav-link i, 
+.sidebar a{
+    color: black;
+}
+
+.sub-menu {
+    padding-left: 20px; /* Optional: Indent sub-menu items */
+}
+.sidebar .nav-link:hover,
+.sidebar .nav-link:hover i {
+    background-color: rgb(72, 74, 172); /* Change text and icon color on hover */
+    color: white;
+    border-radius: 15px;
+}
+
+.menu-arrow {
+    transition: transform 0.3s ease-in-out;
+}
+.nav-link[aria-expanded="true"] .menu-arrow {
+    transform: rotate(90deg);
+}
+.container
+{
+    background-color: #f5f7ff;
+}
